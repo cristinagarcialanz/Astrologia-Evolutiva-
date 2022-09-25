@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="keywords"
+        content="Reservar, bar, restaurant, menu, cerveza artesanal, tapas, grill, hamburguesas, pizzas, comida mediterranea, cena, vinos">
+    <meta name="description"
+        content="En nuestra página puedes reservar una mesa y disfrutar las diferentes áreas de Casa Barceló Bistró para eventos y celebraciones">
+
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="../img/logotipo.png" />
+    <!--link Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Dancing+Script&family=Homemade+Apple&family=Marcellus&display=swap" rel="stylesheet">
+    <!--link Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--link Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--Link Animación aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Link CSS-->
+    <link rel="stylesheet" href="../estilos.css">
+    <title>Reservaciones | Susan García Lanz | Astrología</title>
+</head>
+
+<body>
+    <header>
+        <!-- Inicio Barra de Navegación-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <!-- Brand -->
+            <div class="containerLogo">
+                <img class="logo" src="../img/logotipo.png" alt="Logo | Casa Barceló Bistró">
+            </div>
+            <div> <h2 class="susan">Susan García Lanz de Weissbacher</h2></div>
+            <!-- Links -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Proximamente<i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../pages/contacto.html">⚜⚜⚜⚜⚜⚜⚜</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../pages/contacto.html">Perfumes, Esencias y Jabones<i
+                                    class="wow bounce fa-solid fa-cart-shopping"></i></a>
+                            <a class="dropdown-item" href="https://www.instagram.com/casabarcelobodega/?hl=es">Libros <i
+                                    class="fa-solid fa-cart-shopping"></i></a>
+                            <a class="dropdown-item" href="https://www.instagram.com/casabarceloarteyfe/?hl=es">Piedras
+                                <i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/yosoy.html">Yo Soy</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sesiones.html">Sesiones</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pages/reservaciones.html">Reservaciones</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                    <!-- Dropdown -->
+                    
+
+                </ul>
+                
+            </div>
+        </nav>
+        <!-- Fin Barra de Navegación -->
+    </header>
+
+    <main>
+        <section class="reservaciones">
+            <section class="formContainer" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <form action="enviar.netlify" method="get" enctype="text/plain" class="form netlify">
+                    <fieldset class="formContainer__title">
+                        <legend> <strong>⚜Regístrate Aquí</strong> </legend>
+
+                        <div>
+                            <label class="form__label" for="Usuario">Usuario:</label>
+                            <input class="form__input" type="text" placeholder="Usuario" required>
+
+                            <label class="form__label" for="Contraseña">Contraseña:</label>
+                            <input class="form__input" type="password" placeholder="Contraseña" required>
+                        </div>
+
+                        <div>
+                            <label class="form__label" for="Nombre">Nombre:</label>
+                            <input class="form__input" type="text" placeholder="Nombre" required>
+
+                            <label class="form__label" class="form__label" for="Apellido">Apellido:</label>
+                            <input class="form__input" type="text" name="Apellido" placeholder="Apellido" required>
+
+                            <label class="form__label" for="tel">Teléfono:</label>
+                            <input class="form__input" type="tel" placeholder="tel" required>
+
+                            <label class="form__label" for="Mail">Correo:</label>
+                            <input class="form__input" type="mail" placeholder="Mail" required>
+                        </div>
+                        <br>
+                        <div>
+                            <h4> <strong> ⚜Reserva una Sesión</strong></h4>
+                            <label class="form__label" for="Fecha">Fecha:</label>
+                            <input class="form__input" type="date" placeholder="Fecha" required>
+
+                            <label class="form__label" for="Hora">Hora:</label>
+                            <input class="form__input" type="time" placeholder="Hora" required>                            
+                        </div>
+
+                        <div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-dark dropdown-toggle" type="button"
+                                    id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+                                    En que horario prefieres?
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <button class="dropdown-item" type="button">Mañana</button>
+                                    <button class="dropdown-item" type="button">Tarde</button>
+                                    <button class="dropdown-item" type="button">Noche</button>
+                                </div>
+                            </div>
+<br>
+                            
+                            <div>
+                                <label class="form__label" for="comentario">Comentarios</label>
+                                <textarea class="form__texarea" name="text" id="" cols="30" rows="5"
+                                    placeholder="Déjanos un mensaje"></textarea>
+
+                                <input class="form__input form__input--submit" type="submit" value="Enviar">
+                                <input class="form__input form__input--submit" type="reset" value="Borrar">
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <button type="button" class="btn btn-dark">Acepto los terminos</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+    </main>
+    
+    <!-- Inicio Footer-->
+    <footer class="container-fluid text-center">
+        <p>Tratamos sus datos personales con la exclusiva finalidad de gestionar
+            su cita, comunicarle la información necesaria sobre la misma, gestionar el pago, la facturación y elaborar
+            estadísticas. Todos los derechos reservados por Copy Right© Susan García Lanz de Weissbacher 2022 | Desarrollado por
+            Desarrollado por webapplicationstudio.site</p>
+    
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>       
+            <a href="https://www.instagram.com/susangarcialanzdeweissbacher"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCjPrfmJ9QUdmoaHI7foPMQQ"><i class="fa-brands fa-youtube"></i></a>
+
+    </footer>
+    <a href="#" class="subir"><i class="fa-solid fa-angle-up"></i></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+</body>
