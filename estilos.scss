@@ -5,7 +5,6 @@ $color3: #D3D3D3;
 $color4: darkgray;
 $color5: beige;
 $color6: black;
-$color7: rgb(34, 34, 63);
 
 // Fuentes
 $font-family1: 'Dancing Script',
@@ -29,14 +28,13 @@ html {
   scroll-behavior: smooth;  
 }
 
-
 .containerLogo {
   width: 100px;
   height: 100px;
 }
 
 .logo {
-  width: $ancho;
+  width: 100%;
   border-radius: 100%;
 }
 
@@ -61,7 +59,7 @@ html {
 }
 
 .navbar {
-  background-color: $color6;
+  background-color: $color1;
   margin-left: auto;
   margin-right: auto;
 
@@ -72,6 +70,12 @@ html {
       color: $color3;
     }
   }
+}
+
+.susan{
+  font-family: 'Great Vibes';
+  color: $color5;
+  margin-left: 20px;
 }
 
 // Video
@@ -85,7 +89,7 @@ html {
 }
 
 .video {
-  width: 50%    !important;
+  width: 100%    !important;
   height: 100%   !important;
 }
 
@@ -94,18 +98,18 @@ html {
   background-image: url(img/jumbotron.jpg);
   background-position: center;
   background-size: cover;
+  height: 400px;
   display: block;
-  opacity: 0.20;
-  height: 100vh;
+  opacity: 0.80;  
 
   h1 {
     color: $color5;
     text-align: end;
-    font-size: $font-xl;
+    font-size: 30px;
     padding-right: 80px;
     align-items: unset;
     margin-top: 10px;
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Dancing Script';
 
     span {
       color: $color2;
@@ -122,6 +126,7 @@ html {
 
   a {
     justify-content: end;
+    margin-left: 10px;
   }
 
 }
@@ -131,29 +136,29 @@ html {
   background-color: $color2;
   text-align: center;
   color: $color5;
-  font-family: $font-family1;
-  font-size: $font-med;
-  padding: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Marcellus';
+  font-weight: 700;
+  font-size: 25px;
+  padding: 10px;  
 }
 
 .feature {
-  background-color: $color5;
+  background-color: $color3;
   border: 2px solid $color1;
   border-radius: 3%;
-  padding: 5px 10px;
+  padding: 2px 5px;
 
   h4 {
     text-align: center;
     color: $color1;
     border-radius: 3px;
-    font-size: $font-small;
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   img {
     align-items: center;
-    width: 90%;
+    width: 80%;
     height: 85%;
   }
 }
@@ -182,9 +187,14 @@ footer {
   padding: 5px;
 
   p {
-    font-size: $font-xs;
+    font-size: 14px;
     padding: 0px 80px 0px 80px;
-  }  
+    margin-bottom: 0;
+  }
+  a{
+    color: $color5;
+    font-size: 20px;
+  }
 }
 
 .subir {
@@ -203,7 +213,7 @@ footer {
 }
 
 /*Yo Soy*/
-.nosotros {
+.yoSoy {
   min-height: 530px;
 }
 
@@ -217,7 +227,7 @@ footer {
 }
 
 .nleft img {
-  width: $ancho;
+  width: 100%;
 }
 
 .astrologia {
@@ -246,15 +256,16 @@ footer {
 
   h3 {
     text-align: center;
-    font-size: $font-med;
+    font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   p {
-    margin-bottom: 20px;
-    font-size: $font-xs;
+    margin-bottom: 10px;
+    font-size: 14px;
     color: $color6;
     padding: 5px;
+    
   }
 
   a {
@@ -265,7 +276,7 @@ footer {
     border-radius: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    border: 3px solid $color1;
+    border: 3px solid $color3;
     width: 600;
     padding: 4px;
     margin-left: 10px;
@@ -280,8 +291,8 @@ footer {
 .galeria {
   background-color: $color3;
   min-height: 500px;
-  width: 98%;
-  gap: 3px;
+  width: 90%;
+  gap: 20px;
 }
 
 .img {
@@ -372,7 +383,7 @@ footer {
 }
 
 .titulosLectura {
-  font-size: $font-xs;
+  font-size: 20px;
   color: $color1;
   text-align: center;
 }
@@ -400,21 +411,23 @@ footer {
 .formContainer {
   background-color: $color5;
   width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 5px 5px 7px 0px $color1;
-  color: $color6;
+  color: $color1;
   padding: 20px;
   align-items: center;
   justify-content: center
 }
 
 .formContainer__title {
-  color: $color6;
+  color: $color1;
   font-size: 14px;
 }
 
 .form {
   text-align: center;
-  color: $color6;
+  color: $color1;
 }
 
 .form__label {
@@ -434,7 +447,7 @@ footer {
   padding: 8px;
   color: $color1;
   border: $color1;
-  border-bottom: solid 1px $color2;
+  border-bottom: solid 1px $color1;
   font-family: 'Domine', serif;
   font-size: 14px;
   border-radius: 5px;
@@ -461,7 +474,7 @@ footer {
 }
 
 .form__input--submit:hover {
-  background-color: $color2;
+  background-color: $color1;
 }
 
 /*Contacto*/
@@ -491,18 +504,17 @@ footer {
   background-color: #17F32C;
   color: $color5;
   border-radius: 50px;
-  font-size: $font-xl;
+  font-size: 30px;
 }
 
 .youtube {
   color: red;
-  font-size: $font-xl;
+  font-size: 30px;
 }
 
 .instagram {
   color: rgb(255, 0, 221);
-  font-size: $font-xl;
-
+  font-size: 30px;
 }
 
 //Constelación
